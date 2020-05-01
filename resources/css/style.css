@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:#fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+/*top and bottom will be zero and left right margin will be auto.*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hero-text-box{
+    position: absolute;
+    width:1140px;
+    top:50%;
+    left:50%;
+   transform:translate(-50%, -50%);
+  
+}
+
+header{
+    background-image: linear-gradient(rgb(0,0,0,0.7),#000),url('img/hero.jpg');
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+
+h1{
+    margin:0;
+}
