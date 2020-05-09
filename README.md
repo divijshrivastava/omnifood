@@ -1,2 +1,2 @@
 This is website for omnifood company.
-This is a commit from cloud.
+Ubuntu is a cool OS.
