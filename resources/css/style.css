@@ -37,14 +37,13 @@ section{
 /*-------------------------------------------*/
 
 h1,h2,h3{
-    font-weight: 300;
-    
+    font-weight: 300;    
     text-transform: uppercase;
 }
 
 h1{    
    font-size:240%;
-     margin-top:0;
+    margin-top:0;
     margin-bottom:20px;
     color:#fff;
     word-spacing:4px; 
@@ -202,4 +201,31 @@ border-bottom: 2px solid #e67e22;
 .box p{
     font-size: 90%;
     line-height:145%;
+}
+
+
+/*--------------------------------------------------*/
+/* Meals */
+/*--------------------------------------------------*/
+
+
+.meals-showcase{
+    list-style:none;
+    width:100%;
+}
+
+.meals-showcase li{
+    display:block;
+    float:left;
+    width:25%;
+}
+
+.meal-photo{
+    width:100%;
+    margin:0;
+}
+
+.meal-photo img{
+    width:100%;
+    height:auto;
 }
