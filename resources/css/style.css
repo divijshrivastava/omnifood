@@ -243,11 +243,12 @@ border-bottom: 2px solid #e67e22;
     width:100%;
     height:auto;
     transform:scale(1.15);
-      transition: transform 0.7s, opacity 0.5s;
+    transition: transform 0.7s, opacity 0.5s;
 }
 
 .meal-photo img:hover{
     opacity:1;
     transform:scale(1.03);
-  
 }
+
+
