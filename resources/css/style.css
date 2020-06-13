@@ -14,13 +14,14 @@ Orange color: #e67e22
     box-sizing: border-box;
 }
 
-html{
+html, body{
     background-color:#fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 /*top and bottom will be zero and left right margin will be auto.*/
 .row{
@@ -173,7 +174,6 @@ a:hover, a:active{
     top:50%;
     left:50%;
    transform:translate(-50%, -50%);
-  
 }
 
 header{
@@ -220,15 +220,9 @@ ul{
 }
 
 
-.main-nav li a:hover, .main-nav li a:active{
-border-bottom: 2px solid #e67e22;
-    
-    
-}
+.main-nav li a:hover, .main-nav li a:active{border-bottom: 2px solid #e67e22;}
 
-.box {
-    padding: 1%;
-}
+.box {padding: 1%;}
 
 .box p{
     font-size: 90%;
@@ -307,7 +301,6 @@ border-bottom: 2px solid #e67e22;
 .steps-box:first-child{
    text-align: right;
     padding-right: 3%;  
-    margin-top: 30px;
 }
 .steps-box:last-child{
     padding-left: 3%;
