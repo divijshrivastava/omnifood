@@ -2,16 +2,43 @@ $(document).ready(function(){
  
     var waypoint = new Waypoint({
         element: $('.js--section-features'),
-    handler:function(direction){
-        if(direction == "down"){
-            $("nav").addClass("sticky");
-        }else{
-            $("nav").removeClass("sticky");
-        }
-    },
+		handler:function(direction){
+					if(direction == "down"){
+						$("nav").addClass("sticky");
+					}else{
+						$("nav").removeClass("sticky");
+					}
+				},
 		offset:'60px;'
-});
+	});
+
+		$('.js--wp-1').waypoint({
+		handler: function(direction){
+					$('.js--wp-1').addClass('animate__animated animate__fadeIn');
+				},
+		offset:'50%'
+	});
 	
+		$('.js--wp-2').waypoint({
+		handler: function(direction){
+					$('.js--wp-2').addClass('animate__animated animate__slideInUp')
+		},
+		offset:'50%'
+	})
+	
+		$('.js--wp-3').waypoint({
+		handler: function(direction){
+					$('.js--wp-3').addClass('animate__animated animate__fadeIn')
+		},
+		offset:'50%'
+	})
+	
+		$('.js--wp-4').waypoint({
+		handler: function(direction){
+					$('.js--wp-4').addClass('animate__animated animate__pulse')
+		},
+		offset:'50%'
+	})
 	
 	/* Scroll on buttons */
 	
@@ -60,6 +87,9 @@ $('a[href*="#"]')
       }
     }
   });
+	
+	
+	
     
 })
 

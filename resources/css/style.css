@@ -602,3 +602,23 @@ footer p{
    
     margin-top: 20px;
 }
+
+/*-------------------------------------------*/
+/* Animations */
+/*-------------------------------------------*/
+
+.js--wp-1, .js--wp-2, .js--wp-3 {
+	opacity:0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.js--wp-4{
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.js--wp-1.animate__animated, .js--wp-2.animate__animated,
+.js--wp-3.animate__animated, .js--wp-4.animate__animated{
+	opacity:1;
+}
