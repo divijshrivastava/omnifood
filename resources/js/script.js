@@ -50,7 +50,7 @@ $(document).ready(function(){
 		$('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000);
 	});
 	
-	
+	/* Navigation Scroll*/
 	// Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -87,6 +87,20 @@ $('a[href*="#"]')
       }
     }
   });
+	
+	/*Mobile Navigation*/
+	
+	$('.js--nav-icon').click(function(){
+		var nav = $('.js--main-nav');
+		nav.slideToggle(200);
+		
+		var icon = $('.js--nav-icon').find('ion-icon');
+		if(icon.attr('name')=='menu'){
+			icon.attr('name', 'close');
+		}else{
+			icon.attr('name','menu');
+		}
+	});
 	
 	
 	
