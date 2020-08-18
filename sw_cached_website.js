@@ -1,3 +1,8 @@
+/**
+ * This file must be kept at the root directory as Service Workers can only cache files
+ * below their directory and not above.
+ */
+
 const cacheName = 'v1';
 
 //Installing Service Worker
@@ -42,35 +47,13 @@ self.addEventListener('activate', (e)=> {
 );
 })
 
-/*
-self.addEventListener('fetch',e =>{
-    console.log("Service Worker: Fetching");
-//want to cache first response, and then when the app is offline, want to return response from the cache.
-    e.respondWith(
-//Caching
-
-        fetch(e.request).then( response => {
-            const respClone = response.clone();
-            caches.open(cacheName).then(cache => {
-                cache.put(e.request, respClone).then(()=>{
-                    console.log("Inserted response to cache.")
-                });
-            })
-
-            return response;
-        }).catch(()=>{
-            console.log("Response from Service Worker.");
-            caches.match(e.request).then( resp => resp);
-        }
-        )
-    );
-   
- 
-})*/
 
 // Call Fetch Event
 self.addEventListener('fetch', e => {
     console.log('Service Worker: Fetching');
+    /** FetchEvent.respondWith() method expects a promise that resolves to Response.
+     * This is why it is mandatory to return Response even from catch().
+     */
     e.respondWith(
       fetch(e.request)
         .then(res => {
@@ -81,7 +64,7 @@ self.addEventListener('fetch', e => {
             // Add response to cache
             cache.put(e.request, resClone).then(n=>{
                 console.log("Successfully put in cache.")
-            })
+            })/**Error can occur when putting scripts injected by chrome-extensions. */
             .catch(err => {
                 console.log(`Error occured while putting response in cache: ${err}`)
             });
