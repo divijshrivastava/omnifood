@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	if(navigator.serviceWorker){
 		navigator.serviceWorker
-			.register('/sw_cached_website.js')
+			.register('../../sw_cached_website.js')
 			.then((reg)=> console.log("Registered service worker."))
 			.catch((err)=>console.error(`Service Worker Error: ${err}`));
 	}
