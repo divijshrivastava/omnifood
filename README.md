@@ -53,7 +53,7 @@
    <ol>
       <li>
          <p>Clone this repository to your local machine.</p>
-         <pre><div class="bg-black rounded-md mb-4"><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-shell">git clone https://github.com/divijish/omnifood.git
+         <pre><div class="bg-black rounded-md mb-4"><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-shell">git clone https://github.com/divijshrivastava/omnifood.git
 </code></div></div></pre>
       </li>
       <li>
